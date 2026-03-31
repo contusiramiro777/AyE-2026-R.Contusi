@@ -27,10 +27,9 @@ for (int c = 7; c <=70; c+=7)
 
 //Ejercicio5
 Console.WriteLine("");
-int acum;
+int res;
 for (int d =1; d <= 5; d++)
 {
-    acum = d;
-    acum += d;
-    Console.WriteLine(acum);
+    res = res+ d;
+    Console.WriteLine(res);
 }
