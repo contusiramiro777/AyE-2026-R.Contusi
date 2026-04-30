@@ -81,7 +81,7 @@ Console.WriteLine("");
 Console.WriteLine("Ingrese su nombre:");
 Console.Write("Nombre: ");
 string nombre = Console.ReadLine();
-Console.WriteLine("Hola, " + nombre + "!");
+Console.WriteLine("Hola, " + nombre);
 
 //Ejercicio 7
 Console.WriteLine("");
