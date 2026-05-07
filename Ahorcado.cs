@@ -1,6 +1,6 @@
 try {
     Console.WriteLine("Juguemos al ahorcado");
-    string[] palabras = { "programacion", "algoritmos", "advincula", "computadora", "minecraft" };
+    string[] palabras = { "programacion", "algoritmos", "ventilador", "computadora", "minecraft" };
     Random random = new Random();
     for (int i = 0; i < palabras.Length; i++)
     {
@@ -41,7 +41,7 @@ try {
             }
             else if (intentosRestantes == 0)
             {
-                Console.WriteLine("Has perdido, La palabra era:" + palabraSecreta);
+                Console.WriteLine("Perdiste, La palabra era:" + palabraSecreta);
                 juegoTerminado = true;
                 break;
             }
@@ -50,5 +50,5 @@ try {
 }
 catch (System.IndexOutOfRangeException)
 {
-    Console.WriteLine("Error: No se han definido palabras para el juego.");
+    Console.WriteLine("Error: Se ha ingresado un valor no válido");
 }
