@@ -1,4 +1,4 @@
-﻿//Ejcercicio1
+    ﻿//Ejcercicio1
 for (int x=0; x<=10; x++)
 {
     Console.WriteLine(x);
@@ -27,7 +27,7 @@ for (int c = 7; c <=70; c+=7)
 
 //Ejercicio5
 Console.WriteLine("");
-int res;
+int res = 0;
 for (int d =1; d <= 5; d++)
 {
     res = res+ d;
