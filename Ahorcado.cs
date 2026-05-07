@@ -1,5 +1,5 @@
 ﻿try(Console.WriteLine("Juguemos al ahorcado");
-string[] palabras = { "programacion", "algoritmos", "advincula", "computadora", "minecraft" };
+string[] palabras = { "programacion", "algoritmos", "advincula", "computadora", "balatro" };
 Random random = new Random();
 for (int i = 0; i < palabras.Length; i++)
 {
