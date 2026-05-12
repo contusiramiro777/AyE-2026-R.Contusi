@@ -52,7 +52,7 @@ try
     for (int i = 0; i < p.Length; i++)
     {
         char letra = p[i];
-        if (letra == 'aeiouAEIOU')
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U')
         {
             contadorVocales++;
         }
