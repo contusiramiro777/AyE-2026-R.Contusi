@@ -1,0 +1,76 @@
+﻿// Ejercicio 1
+
+Console.WriteLine("Ingrese la contraseña: ");
+void Contraseña()
+{
+    string contraseña = Console.ReadLine();
+
+    if (contraseña == "plugg")
+    {
+        Console.WriteLine("Contraseña correcta");
+    }
+    else
+    {
+        Console.WriteLine("Intente otra vez");
+        Contraseña();
+    }
+}
+Contraseña();
+
+// Ejercicio 2
+Console.WriteLine("");
+Console.WriteLine("Ejercicio 2");
+
+void Cuenta(int n)
+{
+    if (n >= 1)
+    {
+        Console.WriteLine(n);
+        Cuenta(n - 1);
+    }
+    else
+    {
+        Console.WriteLine("¡Despegue!");
+    }
+}
+Cuenta(5);
+
+// Ejercicio 3
+Console.WriteLine("");
+Console.WriteLine("Ejercicio 3");
+
+void Adivinar()
+{
+    int x = Convert.ToInt32(Console.ReadLine());
+
+    if (x == 7)
+    {
+        Console.WriteLine("¡Correcto!");
+    }
+    else
+    {
+        Console.WriteLine("Pruebe otra vez");
+        Adivinar();
+    }
+}
+Adivinar();
+
+
+// Ejercicio 4
+Console.WriteLine("");
+Console.WriteLine("Ejercicio 4");
+
+void Suma(int s)
+{
+    int m = Convert.ToInt32(Console.ReadLine());
+
+    if (m == 0)
+    {
+        Console.WriteLine(s);
+    }
+    else
+    {
+        Suma(s + m);
+    }
+}
+Suma(0);

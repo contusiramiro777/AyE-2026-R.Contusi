@@ -1,0 +1,56 @@
+﻿// Ejercicio 1
+void MostrarNumeros(int n)
+{
+    if (n <= 10)
+    {
+        Console.WriteLine(n);
+        MostrarNumeros(n + 1);
+    }
+}
+MostrarNumeros(0);
+
+// Ejercicio 2
+void MostrarHola(int v)
+{
+    if (v < 5)
+    {
+        Console.WriteLine("Hola Mundo");
+        MostrarHola(v + 1);
+    }
+}
+MostrarHola(0);
+
+// Ejercicio 3
+void MostrarPares(int numeroPar)
+{
+    if (numeroPar <= 20)
+    {
+        Console.WriteLine(numeroPar);
+        MostrarPares(numeroPar + 2);
+    }
+}
+MostrarPares(2);
+
+// Ejercicio 4
+void MostrarMultiplos(int m)
+{
+    if (m <= 70)
+    {
+        Console.WriteLine(m);
+        MostrarMultiplos(m + 7);
+    }
+}
+MostrarMultiplos(7);
+
+// Ejercicio 5
+void MostrarSuma(int x, int s)
+{
+    if (x <= 5)
+    {
+        s = s + x;
+        Console.WriteLine(s);
+        MostrarSuma(x + 1, s);
+    }
+}
+
+MostrarSuma(1, 0);
