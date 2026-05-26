@@ -672,12 +672,12 @@ double lado3 = double.Parse(Console.ReadLine());
 
 if (lado1 == lado2 && lado2 == lado3)
 {
-    Console.WriteLine("El triangulo es EQUILATERO.");
+    Console.WriteLine("El triangulo es Equilatero");
 }
 else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3)
 {
-    Console.WriteLine("El triangulo es ISOSCELES.");
+    Console.WriteLine("El triangulo es Isosceles");
 }
 else
-    Console.WriteLine("El triangulo es ESCALENO.");
+    Console.WriteLine("El triangulo es Escaleno");
 
