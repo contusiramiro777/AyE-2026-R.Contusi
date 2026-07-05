@@ -1,5 +1,4 @@
-﻿Console.WriteLine("crear un TaTeTi para jugar de a 2 personas y que funcione y se vea desde la consola y que el jugador 1 sea X y que el jugador 2 sea O");
-int jugadorActual = 1;
+﻿int jugadorActual = 1;
 char[,] tablero = new char[3, 3]
 {
     { ' ', ' ', ' ' },
@@ -35,7 +34,7 @@ while (true)
 
     if (fila < 0 || fila > 2 || columna < 0 || columna > 2)
     {
-        Console.WriteLine("Entrada inválida: la fila y la columna deben ser 1, 2 o 3.");
+        Console.WriteLine("Entrada no válida: la fila y la columna deben ser 1, 2 o 3.");
         continue;
     }
 
@@ -85,9 +84,9 @@ while (true)
         }
         Console.WriteLine();
         if (marca == 'X')
-            Console.WriteLine("Jugador 1 (X) gana. Jugador 2 pierde.");
+            Console.WriteLine("Jugador 1 (X) gana");
         else
-            Console.WriteLine("Jugador 2 (O) gana. Jugador 1 pierde.");
+            Console.WriteLine("Jugador 2 (O) gana");
         break;
     }
 
@@ -105,7 +104,7 @@ while (true)
             if (i < 2) Console.WriteLine("-----");
         }
         Console.WriteLine();
-        Console.WriteLine("Empate.");
+        Console.WriteLine("Empate");
         break;
     }
 
