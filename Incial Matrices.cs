@@ -26,8 +26,8 @@
             string final1 = ganador1 ? red[6][0] : green[6][0];
             string final2 = ganador2 ? yellow[6][0] : blue[6][0];
             
-            Console.WriteLine("pelea 1 el ganador es: " + final1);
-            Console.WriteLine("pelea 2 el ganador es: " + final2);
+            Console.WriteLine("En la pelea 1 el ganador es: " + final1);
+            Console.WriteLine("En la pelea 2 el ganador es: " + final2);
 
             string[][] equipoFinal1 = ganador1 ? red : green;
             string[][] equipoFinal2 = ganador2 ? yellow : blue;
@@ -35,7 +35,7 @@
             ganadorfinal = determinarganador(equipoFinal1, equipoFinal2);
             
             string mostrarganador = ganadorfinal ? equipoFinal1[6][0] : equipoFinal2[6][0];
-            Console.WriteLine("el ganador del torneo es: " + mostrarganador);
+            Console.WriteLine("El ganador del torneo es: " + mostrarganador);
             
             string[][] equipoCampeón = ganadorfinal ? equipoFinal1 : equipoFinal2;
             mostrar(equipoCampeón);
