@@ -1,4 +1,3 @@
-﻿Console.WriteLine("crea un menu donde pueda pedir 8 cartas o descartar o salir, si descartas tenes que poner cuantas descarta y cuales cartas y luego agregar una listas de las descartadas");
 string[] cartas = new string[8];
 string[] descartadas = new string[52];
 foreach (var cart in cartas)
@@ -71,7 +70,7 @@ while (true)
             }
             else
             {
-                Console.WriteLine("La carta no está en su mano.");
+                Console.WriteLine("La carta no está en tu mano.");
             }
         }
         Console.WriteLine("Cartas descartadas:");
