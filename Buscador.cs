@@ -1,4 +1,3 @@
-﻿Console.WriteLine("Buscador de tesoros - Matriz 10x10");
 string[,] matriz = new string[10, 10];
 bool[,] intentosHechos = new bool[10, 10];
 Random random = new Random();
@@ -70,7 +69,7 @@ while (intentos > 0 && tesorosEncontrados < 3)
 
     if (inputX == null || inputX.Length == 0 || inputY == null || inputY.Length == 0)
     {
-        Console.WriteLine("Coordenadas inválidas. Introduce números entre 0 y 9.");
+        Console.WriteLine("Coordenadas no válidas. Agregue números entre 0 y 9.");
         continue;
     }
 
@@ -83,7 +82,7 @@ while (intentos > 0 && tesorosEncontrados < 3)
     }
     catch
     {
-        Console.WriteLine("Coordenadas inválidas. Introduce números entre 0 y 9.");
+        Console.WriteLine("Coordenadas no válidas. Agregue  números entre 0 y 9.");
         continue;
     }
 
@@ -122,7 +121,7 @@ if (tesorosEncontrados == 3)
 }
 else
 {
-    Console.WriteLine("¡Has perdido! No te quedan más intentos.");
+    Console.WriteLine("Has perdido, no te quedan más intentos.");
 }
 
 Console.WriteLine();
