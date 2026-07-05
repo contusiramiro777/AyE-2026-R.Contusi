@@ -1,5 +1,4 @@
-﻿// ejercicio 1.
-Console.WriteLine("triángulo rectángulo");
+﻿//Ejercicio1
 int[][] triangulo = new int[4][];
 int contador = 1;
 
@@ -13,7 +12,7 @@ for (int i = 0; i < triangulo.Length; i++)
     }
 }
 
-Console.WriteLine("triángulo rectángulo:");
+Console.WriteLine("Triángulo rectángulo:");
 for (int i = 0; i < triangulo.Length; i++)
 {
     for (int j = 0; j < triangulo[i].Length; j++)
@@ -23,8 +22,7 @@ for (int i = 0; i < triangulo.Length; i++)
     Console.WriteLine();
 }
 
-// ejercicio 2.
-Console.WriteLine("contar elementos totales");
+//Ejercicio2
 int[][] matriz2 = new int[][]
 {
     new int[] { 1, 2 },
@@ -37,10 +35,9 @@ for (int i = 0; i < matriz2.Length; i++)
 {
     total += matriz2[i].Length;
 }
-Console.WriteLine($"total de elementos: {total}");
+Console.WriteLine($"Total de elementos: {total}");
 
-// ejercicio 3
-Console.WriteLine(". fila más larga");
+//Ejercicio3
 int[][] matriz3 = new int[][]
 {
     new int[] { 1, 2 },
@@ -59,10 +56,9 @@ for (int i = 0; i < matriz3.Length; i++)
         indiceMasLargo = i;
     }
 }
-Console.WriteLine($"fila más larga: índice {indiceMasLargo} con {longitudMaxima} elementos");
+Console.WriteLine($"Fila más larga: Índice {indiceMasLargo} con {longitudMaxima} elementos");
 
-// ejercicio 4
-Console.WriteLine("4. suma por filas");
+//Ejercicio4
 int[][] matriz4 = new int[][]
 {
     new int[] { 1, 2 },
@@ -81,14 +77,13 @@ for (int i = 0; i < matriz4.Length; i++)
     sumaFilas[i] = suma;
 }
 
-Console.WriteLine("suma de cada fila:");
+Console.WriteLine("Suma de cada fila:");
 for (int i = 0; i < sumaFilas.Length; i++)
 {
-    Console.WriteLine($"fila {i}: {sumaFilas[i]}");
+    Console.WriteLine($"Fila {i}: {sumaFilas[i]}");
 }
 
-// ejercicio 5
-Console.WriteLine("valor máximo");
+//Ejercicio5
 int[][] matriz5 = new int[][]
 {
     new int[] { 1, 2 },
@@ -112,10 +107,9 @@ for (int i = 0; i < matriz5.Length; i++)
         }
     }
 }
-Console.WriteLine($"valor máximo: {maximo} en fila {filaMax}, columna {columnaMax}");
+Console.WriteLine($"Valor máximo: {maximo} en fila {filaMax}, columna {columnaMax}");
 
-// ejercicio 6
-Console.WriteLine("promedio escolar");
+//Ejercicio6
 double[][] notas = new double[][]
 {
     new double[] { 8.5, 9.0, 7.5 },
@@ -135,13 +129,13 @@ for (int i = 0; i < notas.Length; i++)
     promedios[i] = suma / notas[i].Length;
 }
 
-Console.WriteLine("promedios por estudiante:");
+Console.WriteLine("Promedios por estudiante:");
 for (int i = 0; i < promedios.Length; i++)
 {
-    Console.WriteLine($"estudiante {i + 1}: {promedios[i]:F2}");
+    Console.WriteLine($"Estudiante {i + 1}: {promedios[i]:F2}");
 }
 
-// ejercicio 7
+//Ejercicio7
 Console.WriteLine("buscar un intruso");
 int[][] matriz7 = new int[][]
 {
@@ -162,7 +156,7 @@ for (int i = 0; i < matriz7.Length; i++)
         }
     }
 }
-Console.WriteLine($"¿existe el número {buscar}? {(encontrado ? "sí" : "no")}");
+Console.WriteLine($"¿Existe el número {buscar}? {(encontrado ? "sí" : "no")}");
 
 buscar = 10;
 encontrado = false;
@@ -176,4 +170,4 @@ for (int i = 0; i < matriz7.Length; i++)
         }
     }
 }
-Console.WriteLine($"¿existe el número {buscar}? {(encontrado ? "sí" : "no")}");
+Console.WriteLine($"¿Existe el número {buscar}? {(encontrado ? "sí" : "no")}");
