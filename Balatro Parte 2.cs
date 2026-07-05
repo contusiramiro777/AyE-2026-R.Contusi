@@ -1,7 +1,3 @@
-﻿using System;
-
-Console.WriteLine("Balatro 2 - versión con matrices");
-
 string[] palos = { "corazones", "diamantes", "treboles", "picas" };
 string[] valores = { "As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
@@ -55,7 +51,7 @@ for (int i = 0; i < 8; i++)
 while (true)
 {
     Console.WriteLine();
-    Console.WriteLine("¿Qué quieres hacer? (1: Ver mano, 2: Descartar cartas, 3: Ver descartadas, 4: Salir)");
+    Console.WriteLine("¿Qué querés hacer? (1: Ver mano, 2: Descartar cartas, 3: Ver cartas descartadas, 4: Salir)");
     string opcion = Console.ReadLine();
 
     if (opcion == "1")
@@ -86,7 +82,7 @@ while (true)
             }
             catch
             {
-                Console.WriteLine("Entrada no válida. Escribe un número.");
+                Console.WriteLine("Entrada no válida. Escribe un número");
             }
         }
 
@@ -108,20 +104,20 @@ while (true)
                     int parsed = int.Parse(sel);
                     if (parsed < 1 || parsed > 8)
                     {
-                        Console.WriteLine("Índice fuera de rango. Intenta de nuevo.");
+                        Console.WriteLine("Índice fuera de rango. Intentálo de nuevo");
                         continue;
                     }
                     selIndex = parsed - 1;
                     if (cartas[selIndex, 0] == null || cartas[selIndex, 0] == "")
                     {
-                        Console.WriteLine("Esa posición está vacía. Elige otra.");
+                        Console.WriteLine("Esa posición está vacía. Elige otra");
                         continue;
                     }
                     break;
                 }
                 catch
                 {
-                    Console.WriteLine("Entrada inválida. Escribe un número.");
+                    Console.WriteLine("Entrada no válida. Escribe un número");
                 }
             }
 
@@ -146,7 +142,7 @@ while (true)
 
             if (restantes == 0)
             {
-                Console.WriteLine("No quedan cartas en el mazo. La posición quedará vacía.");
+                Console.WriteLine("No quedan cartas en el mazo. La posición quedará vacía");
                 cartas[selIndex, 0] = null;
             }
             else
@@ -171,7 +167,7 @@ while (true)
                 }
             }
 
-            Console.WriteLine("Carta descartada y reemplazada.");
+            Console.WriteLine("Carta descartada y reemplazada");
         }
     }
     else if (opcion == "3")
@@ -193,7 +189,7 @@ while (true)
     }
     else if (opcion == "4")
     {
-        Console.WriteLine("¡Gracias por jugar!");
+        Console.WriteLine("¡¡¡Gracias por jugar!!!");
         break;
     }
     else
@@ -201,8 +197,3 @@ while (true)
         Console.WriteLine("Opción no válida. Elige 1, 2, 3 o 4.");
     }
 }
-
-
-
-
-
