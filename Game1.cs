@@ -31,7 +31,7 @@ namespace sprites
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            // TODO
 
             base.Initialize();
         }
@@ -88,7 +88,7 @@ namespace sprites
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            // TODO
 
             base.Update(gameTime);
         }
